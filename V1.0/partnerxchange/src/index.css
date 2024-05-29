@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.rbc-event {
+    @apply bg-blue-100 text-black text-xs;
+  }
+  
+  
+  .rbc-event.rbc-selected, .rbc-day-slot .rbc-selected.rbc-background-event {
+    @apply bg-transparent
+  }
+  .rbc-event-content {
+    @apply overflow-auto;
+  /* line-height: 2; */
+  /* height: 200px; */
+  
+  
+}
+.rbc-row-segment{
+    height: 200%;
+
+  }
+  .rbc-ellipsis, .rbc-show-more, .rbc-row-segment .rbc-event-content, .rbc-event-label {
+    display: block;
+    overflow: auto;
+    text-overflow: clip;
+    white-space: whitespace-normal;
+  }
+  
+  .rbc-row-content {
+    @apply max-h-[120px] !important;
+  }
+  
+  .rbc-month-row {
+    @apply overflow-visible !important;
+  }
+  
+  
+  
